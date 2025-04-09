@@ -1,8 +1,11 @@
+import 'package:dev_portfolio/data/model/profile.dart';
 import 'package:dev_portfolio/main.dart';
 import 'package:flutter/material.dart';
 
 class ProfileHeader extends StatelessWidget {
-  const ProfileHeader({super.key});
+  final Profile profile;
+
+  const ProfileHeader({super.key, required this.profile});
 
   @override
   Widget build(BuildContext context) {
@@ -23,8 +26,8 @@ class ProfileHeader extends StatelessWidget {
   Column _profileInfo(BuildContext context) {
     return Column(
       children: [
-        Text('Edgard Ardon', style: context.textTheme.displaySmall),
-        Text('Description', style: context.textTheme.titleMedium),
+        Text(profile.fullName, style: context.textTheme.displaySmall),
+        Text(profile.aboutText, style: context.textTheme.titleMedium),
       ],
     );
   }

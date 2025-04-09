@@ -1,0 +1,13 @@
+{
+    "profile": {
+        "fullName": "Edgard Ardón",
+        "aboutText": "Lorem",
+        "links": [
+            {
+                "title": "LinkedIn",
+                "url": "http...",
+                "iconUrl": "http.."
+            }
+        ]
+    }
+}
