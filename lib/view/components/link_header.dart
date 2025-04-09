@@ -22,12 +22,7 @@ class LinkHeader extends StatelessWidget {
   }
 
   Text _title(BuildContext context) {
-    return Text(
-      'Contacto',
-      style: context.textTheme.headlineSmall?.copyWith(
-        fontWeight: FontWeight.bold,
-      ),
-    );
+    return Text('Contacto', style: context.textTheme.titleLarge);
   }
 
   GridView _buttons() => GridView.extent(

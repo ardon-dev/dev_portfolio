@@ -1,7 +1,8 @@
 {
     "profile": {
         "fullName": "Edgard Ardón",
-        "aboutText": "Lorem",
+        "aboutText": "Desarrollador de aplicaciones Android con más de 5 años de experiencia, siempre buscando crear aplicaciones sólidas y enfocadas a la experiencia de usuario, utilizando las mejores prácticas y tecnologías recomendadas para asegurar una aplicación de calidad.",
+        "role": "Mobile Developer",
         "links": [
             {
                 "title": "LinkedIn",

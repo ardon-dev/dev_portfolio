@@ -27,7 +27,7 @@ class ProfileHeader extends StatelessWidget {
     return Column(
       children: [
         Text(profile.fullName, style: context.textTheme.displaySmall),
-        Text(profile.aboutText, style: context.textTheme.titleMedium),
+        Text(profile.role, style: context.textTheme.titleMedium),
       ],
     );
   }

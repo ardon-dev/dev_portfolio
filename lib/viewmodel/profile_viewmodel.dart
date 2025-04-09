@@ -8,6 +8,7 @@ class ProfileViewmodel with ChangeNotifier {
   Profile _profile = Profile(
     fullName: 'fullName',
     aboutText: 'aboutText',
+    role: '',
     links: [],
   );
   Profile get profile => _profile;
