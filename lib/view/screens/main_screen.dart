@@ -19,7 +19,10 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     final isWide = MediaQuery.of(context).size.width >= 800;
-    return Scaffold(body: Row(children: [_navigationRail(isWide), _content()]));
+    return Scaffold(
+      appBar: AppBar(title: Text('Mi portafolio')),
+      body: Row(children: [_navigationRail(isWide), _content()]),
+    );
   }
 
   Expanded _content() => Expanded(child: _pages[_selectedIndex]);
