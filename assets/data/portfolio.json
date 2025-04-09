@@ -5,8 +5,23 @@
         "links": [
             {
                 "title": "LinkedIn",
-                "url": "http...",
-                "iconUrl": "http.."
+                "url": "https://www.linkedin.com/in/josue-ardon/",
+                "iconUrl": "https://cdn-icons-png.flaticon.com/512/3128/3128219.png"
+            },
+            {
+                "title": "Github",
+                "url": "https://github.com/ardon-dev",
+                "iconUrl": "https://cdn-icons-png.flaticon.com/512/2111/2111432.png"
+            },
+            {
+                "title": "Gmail",
+                "url": "josueardon.developer@gmail.com",
+                "iconUrl": "https://cdn-icons-png.flaticon.com/512/4926/4926635.png"
+            },
+            {
+                "title": "WhatsApp",
+                "url": "+50370859890",
+                "iconUrl": "https://cdn-icons-png.flaticon.com/512/1384/1384023.png"
             }
         ]
     }

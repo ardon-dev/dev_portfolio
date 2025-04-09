@@ -1,4 +1,5 @@
 import 'package:dev_portfolio/data/model/link.dart';
+import 'package:dev_portfolio/main.dart';
 import 'package:flutter/material.dart';
 
 class LinkButton extends StatelessWidget {
@@ -9,9 +10,18 @@ class LinkButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton.filledTonal(
-      onPressed: () => onClick(),
-      icon: Image.network(link.iconUrl, width: 24, height: 24),
+    return Tooltip(
+      message: link.url,
+      child: OutlinedButton.icon(
+        onPressed: () => onClick(),
+        label: Text(link.title),
+        icon: Image.network(
+          link.iconUrl,
+          width: 18,
+          height: 18,
+          color: context.colorScheme.primary,
+        ),
+      ),
     );
   }
 }

@@ -14,7 +14,10 @@ class ProfileScreen extends StatelessWidget {
 
     return ListView(
       padding: EdgeInsets.all(16),
-      children: [ProfileHeader(profile: viewModel.profile), LinkHeader()],
+      children: [
+        ProfileHeader(profile: viewModel.profile),
+        LinkHeader(links: viewModel.profile.links),
+      ],
     );
   }
 }

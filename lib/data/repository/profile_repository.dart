@@ -7,9 +7,7 @@ class ProfileRepository {
     final String jsonString = await rootBundle.loadString(
       'assets/data/portfolio.json',
     );
-    print(jsonString);
     final Map<String, dynamic> jsonData = json.decode(jsonString);
-    print(jsonData);
     return Portfolio.fromJson(jsonData);
   }
 }
