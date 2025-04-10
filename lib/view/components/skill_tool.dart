@@ -10,7 +10,7 @@ class SkillTool extends StatelessWidget {
     return Chip(
       label: Text(tool),
       side: BorderSide(style: BorderStyle.none),
-      backgroundColor: context.colorScheme.primaryContainer,
+      backgroundColor: context.colorScheme.surfaceContainerHigh,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
       labelStyle: context.textTheme.labelSmall,
       labelPadding: EdgeInsets.all(0),

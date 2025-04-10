@@ -33,12 +33,17 @@ class SkillCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16.0),
                 color: context.colorScheme.surface,
               ),
-              child: SingleChildScrollView(
-                child: Wrap(
-                  spacing: 8.0,
-                  runSpacing: 8.0,
-                  children:
-                      skill.tools.map((tool) => SkillTool(tool: tool)).toList(),
+              child: Scrollbar(
+                thumbVisibility: true,
+                child: SingleChildScrollView(
+                  child: Wrap(
+                    spacing: 8.0,
+                    runSpacing: 8.0,
+                    children:
+                        skill.tools
+                            .map((tool) => SkillTool(tool: tool))
+                            .toList(),
+                  ),
                 ),
               ),
             ),
@@ -50,12 +55,12 @@ class SkillCard extends StatelessWidget {
 
   Row _header(BuildContext context) {
     return Row(
-      spacing: 8.0,
+      spacing: 16.0,
       children: [
         // Logo
         skill.icon.contains('https')
-            ? Image.network(skill.icon, width: 50, height: 50)
-            : Image.asset(skill.icon, width: 50, height: 50),
+            ? Image.network(skill.icon, width: 36, height: 36)
+            : Image.asset(skill.icon, width: 36, height: 36),
         Expanded(
           child: Column(
             children: [
@@ -68,21 +73,24 @@ class SkillCard extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: Text(
-                  skill.description,
-                  style: context.textTheme.bodyMedium,
+                  skill.experience,
+                  style: context.textTheme.labelMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: context.colorScheme.primary,
+                  ),
                 ),
               ),
             ],
           ),
         ),
         // Experience
-        Text(
-          skill.experience,
-          style: context.textTheme.labelMedium?.copyWith(
-            fontWeight: FontWeight.bold,
-            color: context.colorScheme.primary,
-          ),
-        ),
+        // Text(
+        //   skill.experience,
+        //   style: context.textTheme.labelMedium?.copyWith(
+        //     fontWeight: FontWeight.bold,
+        //     color: context.colorScheme.primary,
+        //   ),
+        // ),
       ],
     );
   }

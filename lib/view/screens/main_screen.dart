@@ -1,4 +1,3 @@
-import 'package:dev_portfolio/main.dart';
 import 'package:dev_portfolio/view/screens/profile_screen.dart';
 import 'package:dev_portfolio/view/screens/skills_screen.dart';
 import 'package:flutter/material.dart';
