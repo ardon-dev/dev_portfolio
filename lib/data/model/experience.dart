@@ -6,6 +6,7 @@ class Experience {
   final String description;
   final String location;
   final String logo;
+  final List<String> tasks;
 
   Experience({
     required this.place,
@@ -15,9 +16,12 @@ class Experience {
     required this.description,
     required this.location,
     required this.logo,
+    required this.tasks,
   });
 
   factory Experience.fromJson(Map<String, dynamic> json) {
+    var jsonTasks = json['tasks'] as List;
+    List<String> tasks = jsonTasks.map((e) => e.toString()).toList();
     return Experience(
       place: json['place'],
       role: json['role'],
@@ -26,6 +30,7 @@ class Experience {
       description: json['description'],
       location: json['location'],
       logo: json['logo'],
+      tasks: tasks,
     );
   }
 }
