@@ -1,0 +1,69 @@
+[
+    {
+        "name": "Android Nativo",
+        "description": "Diseño y desarrollo de interfaces y funcionalidades para Android.",
+        "experience": "5 años",
+        "icon": "https://cdn-icons-png.flaticon.com/512/179/179308.png",
+        "tools": [
+            "Java",
+            "Koltin",
+            "Jetpack Compose",
+            "Databinding",
+            "Flows",
+            "MVVM",
+            "Clean Architecture",
+            "Unit Testing",
+            "Koin",
+            "Dagger Hilt",
+            "Room",
+            "Retrofit",
+            "Ktor",
+            "Apollo GraphQL",
+            "Firebase",
+            "Google Play Services",
+            "Huawei Mobile Services"
+        ]
+    },
+    {
+        "name": "iOS Nativo",
+        "description": "Diseño y desarrollo de interfaces y funcionalidades para iOS.",
+        "experience": "1 año",
+        "icon": "https://cdn-icons-png.flaticon.com/512/0/747.png",
+        "tools": [
+            "Swift",
+            "SwiftUI",
+            "SwiftData",
+            "CoreData",
+            "Alamofire",
+            "MVVM",
+            "Clean Architecture",
+            "Unit Testing"
+        ]
+    },
+    {
+        "name": "Koltin multiplatform",
+        "description": "Diseño y desarrollo de interfaces y funcionalidades para Android, iOS y Escritorio.",
+        "experience": "-1 año",
+        "icon": "assets/images/kmp.png",
+        "tools": [
+            "Kotlin",
+            "Swift",
+            "Koin",
+            "Compose multiplatform",
+            "SwiftUI",
+            "Ktor"
+        ]
+    },
+    {
+        "name": "Flutter",
+        "description": "Diseño y desarrollo de interfaces y funcionalidades para Android, iOS, Escritorio y Web.",
+        "experience": "1 año",
+        "icon": "https://img.icons8.com/color/512/flutter.png",
+        "tools": [
+            "Dart",
+            "Kotlin",
+            "Swift",
+            "Provider"
+        ]
+    }
+]

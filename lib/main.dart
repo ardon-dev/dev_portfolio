@@ -1,5 +1,6 @@
 import 'package:dev_portfolio/view/screens/main_screen.dart';
 import 'package:dev_portfolio/viewmodel/profile_viewmodel.dart';
+import 'package:dev_portfolio/viewmodel/skills_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -13,7 +14,10 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [ChangeNotifierProvider(create: (_) => ProfileViewmodel())],
+      providers: [
+        ChangeNotifierProvider(create: (_) => ProfileViewmodel()),
+        ChangeNotifierProvider(create: (_) => SkillsViewmodel()),
+      ],
       child: MaterialApp(
         theme: ThemeData(
           useMaterial3: true,

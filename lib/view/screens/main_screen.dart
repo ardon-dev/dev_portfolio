@@ -1,4 +1,6 @@
+import 'package:dev_portfolio/main.dart';
 import 'package:dev_portfolio/view/screens/profile_screen.dart';
+import 'package:dev_portfolio/view/screens/skills_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
@@ -12,7 +14,7 @@ class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
   final List<Widget> _pages = [
     ProfileScreen(),
-    ProfileScreen(),
+    SkillsScreen(),
     ProfileScreen(),
   ];
 
@@ -20,7 +22,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     final isWide = MediaQuery.of(context).size.width >= 800;
     return Scaffold(
-      appBar: AppBar(title: Text('Mi portafolio')),
+      //appBar: AppBar(title: Text('Mi portafolio')),
       body: Row(children: [_navigationRail(isWide), _content()]),
     );
   }
@@ -28,10 +30,10 @@ class _MainScreenState extends State<MainScreen> {
   Expanded _content() => Expanded(child: _pages[_selectedIndex]);
 
   NavigationRail _navigationRail(bool isWide) => NavigationRail(
+    elevation: 1,
     selectedIndex: _selectedIndex,
-    extended: isWide,
-    labelType:
-        isWide ? NavigationRailLabelType.none : NavigationRailLabelType.all,
+    extended: false,
+    labelType: NavigationRailLabelType.all,
     onDestinationSelected: (index) {
       setState(() {
         _selectedIndex = index;
@@ -46,7 +48,7 @@ class _MainScreenState extends State<MainScreen> {
       // Technology stack
       NavigationRailDestination(
         icon: Icon(Icons.code),
-        label: Text('Tecnologías'),
+        label: Text('Habilidades'),
       ),
       // Projects
       NavigationRailDestination(

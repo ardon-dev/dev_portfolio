@@ -1,9 +1,9 @@
 import 'package:dev_portfolio/data/model/profile.dart';
-import 'package:dev_portfolio/data/repository/profile_repository.dart';
+import 'package:dev_portfolio/data/repository/portfolio_repository.dart';
 import 'package:flutter/widgets.dart';
 
 class ProfileViewmodel with ChangeNotifier {
-  ProfileRepository repository = ProfileRepository();
+  PortfolioRepository repository = PortfolioRepository();
 
   Profile _profile = Profile(
     fullName: 'fullName',
