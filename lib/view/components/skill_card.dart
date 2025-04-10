@@ -65,9 +65,12 @@ class SkillCard extends StatelessWidget {
           child: Column(
             children: [
               // Title
-              SizedBox(
-                width: double.infinity,
-                child: Text(skill.name, style: context.textTheme.titleMedium),
+              Tooltip(
+                message: skill.description,
+                child: SizedBox(
+                  width: double.infinity,
+                  child: Text(skill.name, style: context.textTheme.titleMedium),
+                ),
               ),
               // Description
               SizedBox(
