@@ -24,6 +24,17 @@
                 "url": "+50370859890",
                 "iconUrl": "https://cdn-icons-png.flaticon.com/512/1384/1384023.png"
             }
+        ],
+        "experience": [
+            {
+                "place": "Elaniin",
+                "role": "Android Developer Intern",
+                "startDate": "jun 2019",
+                "endDate": "sep 2019",
+                "description": "asdasdasd",
+                "location": "San Salvador",
+                "logo": "https://greatplacetoworkcarca.com/wp-content/uploads/2023/01/Logo-Elaniin-300x128.png"
+            }
         ]
     }
 }
