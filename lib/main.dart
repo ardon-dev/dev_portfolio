@@ -23,13 +23,13 @@ class MainApp extends StatelessWidget {
         darkTheme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.teal,
+            seedColor: Colors.white,
             brightness: Brightness.dark,
           ),
         ),
         theme: ThemeData(
           useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         ),
         home: const MainScreen(),
       ),

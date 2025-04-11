@@ -1,54 +1,41 @@
 import 'package:dev_portfolio/main.dart';
 import 'package:dev_portfolio/view/components/education_card.dart';
 import 'package:dev_portfolio/view/components/experience_card.dart';
-import 'package:dev_portfolio/view/components/link_header.dart';
 import 'package:dev_portfolio/view/components/profile_header.dart';
 import 'package:dev_portfolio/viewmodel/profile_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class ProfileScreen extends StatelessWidget {
+class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
 
+  @override
+  State<ProfileScreen> createState() => _ProfileScreenState();
+}
+
+class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     final viewModel = Provider.of<ProfileViewmodel>(context);
     viewModel.fetchProfile();
 
-    return LayoutBuilder(
-      builder: (context, constrains) {
-        double horizontalPadding;
-        if (constrains.maxWidth >= 1200) {
-          horizontalPadding = 250;
-        } else if (constrains.maxWidth >= 800) {
-          horizontalPadding = 150;
-        } else {
-          horizontalPadding = 16;
-        }
+    return SizedBox(
+      width: 800,
+      child: ListView(
+        padding: EdgeInsets.all(16.0),
+        children: [
+          // Header
+          ProfileHeader(profile: viewModel.profile),
 
-        return ListView(
-          padding: EdgeInsets.only(
-            top: 16,
-            bottom: 16,
-            left: horizontalPadding,
-            right: horizontalPadding,
-          ),
-          children: [
-            // Header
-            ProfileHeader(profile: viewModel.profile),
+          // Experience
+          _sectionTitle(context, 'Experiencia'),
+          _experience(context, viewModel),
 
-            // Cover and contact
-            _cover(context, viewModel.profile.aboutText),
-
-            //LinkHeader(links: viewModel.profile.links),
-            _sectionTitle(context, 'Experiencia'),
-            _experience(context, viewModel),
-
-            _sectionTitle(context, 'Educación'),
-            _education(viewModel),
-          ],
-        );
-      },
+          // Education
+          _sectionTitle(context, 'Educación'),
+          _education(viewModel),
+        ],
+      ),
     );
   }
 
@@ -111,22 +98,4 @@ class ProfileScreen extends StatelessWidget {
       ),
     );
   }
-
-  Card _cover(BuildContext context, String aboutText) => Card(
-    elevation: 0,
-    child: Padding(
-      padding: const EdgeInsets.all(16.0),
-      child: Column(
-        children: [
-          Text('Presentación', style: context.textTheme.titleLarge),
-          SizedBox(height: 16.0),
-          Text(
-            aboutText,
-            textAlign: TextAlign.center,
-            style: context.textTheme.bodyMedium,
-          ),
-        ],
-      ),
-    ),
-  );
 }

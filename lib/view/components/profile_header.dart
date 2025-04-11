@@ -1,5 +1,6 @@
 import 'package:dev_portfolio/data/model/profile.dart';
 import 'package:dev_portfolio/main.dart';
+import 'package:dev_portfolio/view/components/link_button.dart';
 import 'package:flutter/material.dart';
 
 class ProfileHeader extends StatelessWidget {
@@ -16,9 +17,34 @@ class ProfileHeader extends StatelessWidget {
         children: [
           SizedBox(height: 16),
           _profileImage(screenWidth),
+          SizedBox(height: 16.0),
           _profileInfo(context),
-          SizedBox(height: 16),
+          SizedBox(height: 16.0),
+          _links(),
+          _cover(context),
         ],
+      ),
+    );
+  }
+
+  Wrap _links() {
+    return Wrap(
+      spacing: 16.0,
+      runSpacing: 16.0,
+      children:
+          profile.links
+              .map((link) => LinkButton(link: link, onClick: () {}))
+              .toList(),
+    );
+  }
+
+  Padding _cover(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Text(
+        profile.aboutText,
+        textAlign: TextAlign.center,
+        style: context.textTheme.bodyMedium,
       ),
     );
   }
@@ -26,8 +52,14 @@ class ProfileHeader extends StatelessWidget {
   Column _profileInfo(BuildContext context) {
     return Column(
       children: [
-        Text(profile.fullName, style: context.textTheme.displaySmall),
-        Text(profile.role, style: context.textTheme.titleMedium),
+        Text(profile.fullName, style: context.textTheme.headlineMedium),
+        Text(
+          profile.role,
+          style: context.textTheme.titleMedium?.copyWith(
+            color: context.colorScheme.primary,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ],
     );
   }
@@ -39,8 +71,8 @@ class ProfileHeader extends StatelessWidget {
         'images/me.png',
         fit: BoxFit.cover,
         alignment: Alignment.topCenter,
-        width: screenWidth >= 800 ? 250 : 150,
-        height: screenWidth >= 800 ? 250 : 150,
+        width: screenWidth >= 800 ? 200 : 125,
+        height: screenWidth >= 800 ? 200 : 125,
       ),
     );
   }

@@ -17,7 +17,7 @@ class EducationCard extends StatelessWidget {
         child: Column(
           children: [
             _head(context, education),
-            SizedBox(height: 8.0),
+            SizedBox(height: 16.0),
             _description(context),
           ],
         ),
@@ -28,6 +28,7 @@ class EducationCard extends StatelessWidget {
   Row _description(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Icon(Icons.arrow_right_rounded),
         Expanded(

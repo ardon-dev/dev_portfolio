@@ -12,9 +12,8 @@ class LinkButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Tooltip(
       message: link.url,
-      child: OutlinedButton.icon(
+      child: IconButton.filledTonal(
         onPressed: () => onClick(),
-        label: Text(link.title),
         icon: Image.network(
           link.iconUrl,
           width: 18,

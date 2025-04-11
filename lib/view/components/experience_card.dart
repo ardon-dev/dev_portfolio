@@ -16,21 +16,25 @@ class ExperienceCard extends StatelessWidget {
         child: Column(
           children: [
             _company(context, experience),
-            SizedBox(height: 8.0),
-            // Tasks
-            Column(
-              spacing: 8.0,
-              children:
-                  experience.tasks.map((task) => _task(task, context)).toList(),
-            ),
+            SizedBox(height: 16.0),
+            _tasks(context),
           ],
         ),
       ),
     );
   }
 
+  Column _tasks(BuildContext context) {
+    return Column(
+      spacing: 8.0,
+      children: experience.tasks.map((task) => _task(task, context)).toList(),
+    );
+  }
+
   Row _task(String task, BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Icon(Icons.arrow_right_rounded),
         Expanded(

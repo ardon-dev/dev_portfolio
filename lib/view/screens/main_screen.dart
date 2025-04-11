@@ -26,13 +26,14 @@ class _MainScreenState extends State<MainScreen> {
     );
   }
 
-  Expanded _content() => Expanded(child: _pages[_selectedIndex]);
+  Expanded _content() => Expanded(child: Center(child: _pages[_selectedIndex]));
 
   NavigationRail _navigationRail(bool isWide) => NavigationRail(
     elevation: 1,
     selectedIndex: _selectedIndex,
-    extended: false,
-    labelType: NavigationRailLabelType.all,
+    extended: isWide,
+    labelType:
+        isWide ? NavigationRailLabelType.none : NavigationRailLabelType.all,
     onDestinationSelected: (index) {
       setState(() {
         _selectedIndex = index;
