@@ -11,6 +11,7 @@ class ProfileViewmodel with ChangeNotifier {
     role: '',
     links: [],
     experience: [],
+    education: [],
   );
   Profile get profile => _profile;
 

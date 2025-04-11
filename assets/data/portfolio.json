@@ -54,6 +54,38 @@
                     "Desarrollo entero (Backend y Frontend) de un proyecto de aplicación interna."
                 ]
             }
+        ],
+        "education": [
+            {
+                "institution": "Universidad Don Bosco",
+                "career": "Técnico en desarrollo de aplicaciones móviles",
+                "startDate": "jul 2017",
+                "endDate": "nov 2019",
+                "status": "Pensum finalizado",
+                "description": "Formación técnica orientada al diseño y desarrollo de aplicaciones móviles, con énfasis en lenguajes como Java, Kotlin y Swift, manejo de bases de datos y desarrollo de API REST.",
+                "location": "San Salvador",
+                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv9i3NjsiuX6BAkk6Q0qNe7blWXO2ygAyqjw&s"
+            },
+            {
+                "institution": "FEDISAL",
+                "career": "Introducción al desarrollo de software con Python",
+                "startDate": "sep 2022",
+                "endDate": "sep 2022",
+                "status": "Finalizado",
+                "description": "Con una duración de 21 horas, impartido en modalidad virtualpor el Centro de Formación Avanzada para Profesionales FORMÁS, en el marco del 'Programa Nacional de Formación Continua Área Técnica'.",
+                "location": "San Salvador",
+                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkPZeZPs_2fSlputUFK0G4K352OWC3_EnKRA&s"
+            },
+            {
+                "institution": "WEBCOMMSERVICE",
+                "career": "Taller internacional: Python avanzado",
+                "startDate": "abr 2023",
+                "endDate": "abr 2023",
+                "status": "Finalizado",
+                "description": "Con una duración total de 24 horas, impartido Modalidad ONLINE del 24 al 28 de abril del 2023.",
+                "location": "San Salvador",
+                "logo": "https://media.licdn.com/dms/image/v2/D560BAQGPTltZE0lLuA/company-logo_200_200/company-logo_200_200/0/1718916023312/webcommservice_logo?e=2147483647&v=beta&t=hINRXVTbDqzfxKbygf4vW2h7PtgGdaGrmYvm4S5y7H8"
+            }
         ]
     }
 }

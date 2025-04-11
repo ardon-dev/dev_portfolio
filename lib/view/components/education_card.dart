@@ -1,11 +1,12 @@
+import 'package:dev_portfolio/data/model/education.dart';
 import 'package:dev_portfolio/data/model/experience.dart';
 import 'package:dev_portfolio/main.dart';
 import 'package:dev_portfolio/view/components/location_chip.dart';
 import 'package:flutter/material.dart';
 
-class ExperienceCard extends StatelessWidget {
-  final Experience experience;
-  const ExperienceCard({super.key, required this.experience});
+class EducationCard extends StatelessWidget {
+  final Education education;
+  const EducationCard({super.key, required this.education});
 
   @override
   Widget build(BuildContext context) {
@@ -15,80 +16,94 @@ class ExperienceCard extends StatelessWidget {
         padding: const EdgeInsets.all(0.0),
         child: Column(
           children: [
-            _company(context, experience),
+            _head(context, education),
             SizedBox(height: 8.0),
-            // Tasks
-            Column(
-              spacing: 8.0,
-              children:
-                  experience.tasks.map((task) => _task(task, context)).toList(),
-            ),
+            _description(context),
           ],
         ),
       ),
     );
   }
 
-  Row _task(String task, BuildContext context) {
+  Row _description(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Icon(Icons.arrow_right_rounded),
         Expanded(
           child: SizedBox(
             width: double.infinity,
-            child: Text(task, style: context.textTheme.bodyMedium),
+            child: Text(
+              education.description,
+              style: context.textTheme.bodyMedium,
+            ),
           ),
         ),
       ],
     );
   }
 
-  Row _company(BuildContext context, Experience experience) => Row(
+  Row _head(BuildContext context, Education education) => Row(
     spacing: 16.0,
     children: [
       // Logo
       ClipRRect(
         borderRadius: BorderRadius.circular(36.0),
-        child: Image.network(experience.logo, width: 36, height: 36),
+        child: Image.network(education.logo, width: 36, height: 36),
       ),
 
-      // Position
-      _headInfo(experience, context),
+      // Institution
+      _headInfo(context),
 
       // Location
-      LocationChip(location: experience.location),
+      LocationChip(location: education.location),
     ],
   );
 
-  Expanded _headInfo(Experience experience, BuildContext context) {
+  Expanded _headInfo(BuildContext context) {
     return Expanded(
       child: Column(
         children: [
-          // Role
+          // Career
           SizedBox(
             width: double.infinity,
             child: Text(
-              experience.role,
+              education.career,
               style: context.textTheme.bodyMedium?.copyWith(
                 fontWeight: FontWeight.bold,
               ),
             ),
           ),
 
-          // Company
+          // Institution
           SizedBox(
             width: double.infinity,
-            child: Text(experience.place, style: context.textTheme.labelMedium),
+            child: Text(
+              education.institution,
+              style: context.textTheme.labelMedium,
+            ),
           ),
 
           // Period
           SizedBox(
             width: double.infinity,
             child: Text(
-              "${experience.startDate} - ${experience.endDate}",
+              "${education.startDate} - ${education.endDate}",
               style: context.textTheme.labelSmall,
             ),
           ),
+
+          // Status
+          // SizedBox(
+          //   width: double.infinity,
+          //   child: Text(
+          //     education.status,
+          //     style: context.textTheme.labelSmall?.copyWith(
+          //       color: context.colorScheme.primary,
+          //       fontWeight: FontWeight.bold,
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );

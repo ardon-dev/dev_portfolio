@@ -19,6 +19,14 @@ class MainApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => SkillsViewmodel()),
       ],
       child: MaterialApp(
+        themeMode: ThemeMode.light,
+        darkTheme: ThemeData(
+          useMaterial3: true,
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.teal,
+            brightness: Brightness.dark,
+          ),
+        ),
         theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
