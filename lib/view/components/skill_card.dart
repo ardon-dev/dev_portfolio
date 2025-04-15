@@ -1,99 +1,88 @@
 import 'package:dev_portfolio/data/model/skill.dart';
 import 'package:dev_portfolio/main.dart';
-import 'package:dev_portfolio/view/components/skill_tool.dart';
+import 'package:dev_portfolio/view/components/skill_detail_dialog.dart';
 import 'package:flutter/material.dart';
 
-class SkillCard extends StatelessWidget {
+class SkillCard extends StatefulWidget {
   final Skill skill;
-  final BoxConstraints constraints;
 
-  const SkillCard({super.key, required this.skill, required this.constraints});
+  const SkillCard({super.key, required this.skill});
+
+  @override
+  State<SkillCard> createState() => _SkillCardState();
+}
+
+class _SkillCardState extends State<SkillCard> {
+  bool isHover = false;
+  void _setHover(bool value) {
+    setState(() {
+      isHover = value;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 0,
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(children: [_header(context), _skillsView(context)]),
-      ),
-    );
-  }
-
-  Expanded _skillsView(BuildContext context) {
-    return Expanded(
-      child: Column(
-        children: [
-          SizedBox(height: 16.0),
-          Expanded(
-            child: Container(
-              width: double.infinity,
-              padding: EdgeInsets.all(8.0),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16.0),
-                color: context.colorScheme.surface,
-              ),
-              child: Scrollbar(
-                thumbVisibility: true,
-                child: SingleChildScrollView(
-                  child: Wrap(
-                    spacing: 8.0,
-                    runSpacing: 8.0,
-                    children:
-                        skill.tools
-                            .map((tool) => SkillTool(tool: tool))
-                            .toList(),
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Row _header(BuildContext context) {
-    return Row(
-      spacing: 16.0,
-      children: [
-        // Logo
-        skill.icon.contains('https')
-            ? Image.network(skill.icon, width: 36, height: 36)
-            : Image.asset(skill.icon, width: 36, height: 36),
-        Expanded(
-          child: Column(
-            children: [
-              // Title
-              Tooltip(
-                message: skill.description,
-                child: SizedBox(
-                  width: double.infinity,
-                  child: Text(skill.name, style: context.textTheme.titleMedium),
-                ),
-              ),
-              // Description
-              SizedBox(
-                width: double.infinity,
-                child: Text(
-                  skill.experience,
-                  style: context.textTheme.labelMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: context.colorScheme.primary,
-                  ),
-                ),
-              ),
-            ],
+    return GestureDetector(
+      onTap: () {
+        showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return SkillDetailDialog(skill: widget.skill);
+          },
+        );
+      },
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        onEnter: (event) {
+          _setHover(true);
+        },
+        onExit: (event) {
+          _setHover(false);
+        },
+        child: Card(
+          elevation: isHover ? 4 : 0,
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: _header(context, isHover),
           ),
         ),
-        // Experience
-        // Text(
-        //   skill.experience,
-        //   style: context.textTheme.labelMedium?.copyWith(
-        //     fontWeight: FontWeight.bold,
-        //     color: context.colorScheme.primary,
-        //   ),
-        // ),
+      ),
+    );
+  }
+
+  Column _header(BuildContext context, bool isHover) {
+    double size = isHover ? 52 : 36;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        // Logo
+        widget.skill.icon.contains('https')
+            ? Image.network(widget.skill.icon, width: size, height: size)
+            : Image.asset(widget.skill.icon, width: size, height: size),
+        SizedBox(height: 8.0),
+        Flexible(
+          child: SizedBox(
+            width: double.infinity,
+            child: Text(
+              widget.skill.name,
+              style: context.textTheme.titleMedium,
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ),
+        // Description
+        SizedBox(
+          width: double.infinity,
+          child: Text(
+            textAlign: TextAlign.center,
+            widget.skill.experience,
+            style: context.textTheme.labelMedium?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: context.colorScheme.primary,
+            ),
+          ),
+        ),
       ],
     );
   }

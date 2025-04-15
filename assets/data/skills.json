@@ -1,7 +1,7 @@
 [
     {
-        "name": "Android Nativo",
-        "description": "Diseño y desarrollo de interfaces y funcionalidades para Android.",
+        "name": "Android",
+        "description": "Análisis, diseño y desarrollo de aplicaciones nativas para Android.",
         "experience": "5 años",
         "icon": "https://cdn-icons-png.flaticon.com/512/179/179308.png",
         "tools": [
@@ -28,8 +28,8 @@
         ]
     },
     {
-        "name": "iOS Nativo",
-        "description": "Diseño y desarrollo de interfaces y funcionalidades para iOS.",
+        "name": "iOS",
+        "description": "Análisis, diseño y desarrollo de aplicaciones nativas para iOS.",
         "experience": "1 año",
         "icon": "https://cdn-icons-png.flaticon.com/512/0/747.png",
         "tools": [
@@ -46,7 +46,7 @@
     },
     {
         "name": "Flutter",
-        "description": "Diseño y desarrollo de interfaces y funcionalidades para Android, iOS, Escritorio y Web.",
+        "description": "Análisis, diseño y desarrollo de aplicaciones multiplataforma para Android, iOS, Escritorio y Web.",
         "experience": "1 año",
         "icon": "https://img.icons8.com/color/512/flutter.png",
         "tools": [
@@ -59,7 +59,7 @@
     },
     {
         "name": "Koltin multiplatform",
-        "description": "Diseño y desarrollo de interfaces y funcionalidades para Android, iOS y Escritorio.",
+        "description": "Análisis, diseño y desarrollo de aplicaciones multiplataforma para Android, iOS y Escritorio.",
         "experience": "-1 año",
         "icon": "assets/images/kmp.png",
         "tools": [
@@ -73,7 +73,7 @@
     },
     {
         "name": "Ktor",
-        "description": "Desarrollo de API REST.",
+        "description": "Desarrollo de API REST con Kotlin.",
         "experience": "-1 año",
         "icon": "https://resources.jetbrains.com/storage/products/company/brand/logos/Ktor_icon.png",
         "tools": [
@@ -92,7 +92,7 @@
     },
     {
         "name": "Laravel",
-        "description": "Desarrollo de API REST.",
+        "description": "Desarrollo de API REST con PHP.",
         "experience": "1 año",
         "icon": "https://static-00.iconduck.com/assets.00/laravel-icon-995x1024-dk77ahh4.png",
         "tools": [
@@ -104,14 +104,15 @@
     },
     {
         "name": "GIT",
-        "description": "Versionamiento.",
+        "description": "Plataformas de versionamiento y metodologías.",
         "experience": "5 años",
         "icon": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
         "tools": [
             "Github",
             "Github actions",
             "Gitlab",
-            "Bitbucket"
+            "Bitbucket",
+            "Gitflow"
         ]
     },
     {

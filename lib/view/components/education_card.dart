@@ -1,5 +1,4 @@
 import 'package:dev_portfolio/data/model/education.dart';
-import 'package:dev_portfolio/data/model/experience.dart';
 import 'package:dev_portfolio/main.dart';
 import 'package:dev_portfolio/view/components/location_chip.dart';
 import 'package:flutter/material.dart';
