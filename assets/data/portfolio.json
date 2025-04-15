@@ -53,6 +53,60 @@
                     "Colaboración en un proyecto para entidad gubernamental, desarrollando algunas funcionalidades.",
                     "Desarrollo entero (Backend y Frontend) de un proyecto de aplicación interna."
                 ]
+            },
+            {
+                "place": "IdeaWorks - Influencia Digital",
+                "role": "Android Developer",
+                "startDate": "oct 2020",
+                "endDate": "oct 2021",
+                "description": "",
+                "location": "San Salvador",
+                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBcplAcgmqLFSXyU0obG1QRT6lVqkGb6z0Pg&s",
+                "tasks": [
+                    "Desarrollo android desde cero y desarrollo continuo de varios proyectos.",
+                    "Soporte técnico.",
+                    "Lider de un pequeño equipo mobile.",
+                    "Responsable de publicaciones y monitoreo de las aplicaciones."
+                ]
+            },
+            {
+                "place": "Applaudo Studios",
+                "role": "Android Developer",
+                "startDate": "oct 2021",
+                "endDate": "may 2022",
+                "description": "",
+                "location": "San Salvador",
+                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtQ1a7G8ELPlyMEHiY9Q5WsPLaz2FKLBBCgQ&s",
+                "tasks": [
+                    "Aprendizaje de nuevas herramientas y tecnologías para desarrollo."
+                ]
+            },
+            {
+                "place": "iDigitalStudios",
+                "role": "Senior Android Developer",
+                "startDate": "may 2022",
+                "endDate": "may 2024",
+                "description": "",
+                "location": "San Salvador",
+                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98aXEAiz2exWRjgo2pIjZXrixltbaWE9dJg&s",
+                "tasks": [
+                    "Desarrollo android desde cero y desarrollo continuo de varios proyectos.",
+                    "Soporte técnico.",
+                    "Documentación técnica y realización de estimaciones.",
+                    "Responsable de publicaciones y monitoreo de las aplicaciones."
+                ]
+            },
+            {
+                "place": "Tecnologías Innovadoras",
+                "role": "Android Mobile Developer",
+                "startDate": "sep 2024",
+                "endDate": "dec 2024",
+                "description": "",
+                "location": "San Salvador",
+                "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQHnfx7MHGmVpA/company-logo_200_200/company-logo_200_200/0/1719615370402/tecnoin_1_logo?e=2147483647&v=beta&t=jXTm41cGdBkeCijgYILLk7QZw8SfEfYnysuJQ07R6A0",
+                "tasks": [
+                    "Parte del equipo de desarrollo de Banco Cuscatlán, colaborando en el desarrollo de algunas funcionalidades de aplicación Android."
+                ]
             }
         ],
         "education": [
