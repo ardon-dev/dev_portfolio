@@ -29,52 +29,55 @@ class _SkillDetailDialogState extends State<SkillDetailDialog> {
       ],
 
       // Content
-      content: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: SizedBox(
-          width: 400,
-          height: 400,
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              // Image
-              Image.network(widget.skill.icon, width: 48, height: 48),
-              SizedBox(height: 8.0),
+      content: Column(
+        children: [
+          SizedBox(
+            width: 400,
+            height: 400,
+            child: ListView(
+              children: [
+                // Image
+                Image.network(widget.skill.icon, width: 48, height: 48),
+                SizedBox(height: 8.0),
 
-              // Name
-              Text(
-                widget.skill.name,
-                style: context.textTheme.headlineMedium,
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(height: 8.0),
-
-              // Description
-              Text(
-                widget.skill.description,
-                style: context.textTheme.bodyMedium,
-                textAlign: TextAlign.center,
-              ),
-              SizedBox(height: 16.0),
-
-              // Dev stack
-              Text(
-                textAlign: TextAlign.center,
-                'Stack:',
-                style: context.textTheme.labelMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
+                // Name
+                Text(
+                  widget.skill.name,
+                  style: context.textTheme.headlineMedium,
+                  textAlign: TextAlign.center,
                 ),
-              ),
-              SizedBox(height: 8.0),
-              Wrap(
-                spacing: 8.0,
-                runSpacing: 8.0,
-                children:
-                    widget.skill.tools.map((e) => SkillTool(tool: e)).toList(),
-              ),
-            ],
+                SizedBox(height: 8.0),
+
+                // Description
+                Text(
+                  widget.skill.description,
+                  style: context.textTheme.bodyMedium,
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(height: 16.0),
+
+                // Dev stack
+                Text(
+                  textAlign: TextAlign.center,
+                  'Stack:',
+                  style: context.textTheme.labelMedium?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 8.0),
+                Wrap(
+                  spacing: 8.0,
+                  runSpacing: 8.0,
+                  children:
+                      widget.skill.tools
+                          .map((e) => SkillTool(tool: e))
+                          .toList(),
+                ),
+              ],
+            ),
           ),
-        ),
+          Divider(),
+        ],
       ),
     );
   }

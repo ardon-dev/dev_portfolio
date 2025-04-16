@@ -68,6 +68,7 @@ class _SkillCardState extends State<SkillCard> {
               widget.skill.name,
               style: context.textTheme.titleMedium,
               textAlign: TextAlign.center,
+              maxLines: 1,
             ),
           ),
         ),
