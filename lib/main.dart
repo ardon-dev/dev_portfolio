@@ -1,4 +1,3 @@
-import 'package:dev_portfolio/data/repository/project_repository.dart';
 import 'package:dev_portfolio/view/screens/main_screen.dart';
 import 'package:dev_portfolio/viewmodel/profile_viewmodel.dart';
 import 'package:dev_portfolio/viewmodel/projects_viewmodel.dart';
@@ -22,7 +21,7 @@ class MainApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => ProjectsViewmodel()),
       ],
       child: MaterialApp(
-        themeMode: ThemeMode.light,
+        themeMode: ThemeMode.dark,
         darkTheme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(

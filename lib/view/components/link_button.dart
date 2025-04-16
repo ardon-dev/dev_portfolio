@@ -14,12 +14,20 @@ class LinkButton extends StatelessWidget {
       message: link.url,
       child: IconButton.filledTonal(
         onPressed: () => onClick(),
-        icon: Image.network(
-          link.iconUrl,
-          width: 18,
-          height: 18,
-          color: context.colorScheme.primary,
-        ),
+        icon:
+            link.iconUrl.contains('http')
+                ? Image.network(
+                  link.iconUrl,
+                  width: 18,
+                  height: 18,
+                  color: context.colorScheme.primary,
+                )
+                : Image.asset(
+                  link.iconUrl,
+                  width: 18,
+                  height: 18,
+                  color: context.colorScheme.primary,
+                ),
       ),
     );
   }

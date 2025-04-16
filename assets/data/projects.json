@@ -1,14 +1,23 @@
 [
     {
         "name": "FedeMovil",
-        "description": "FedeMovil is a mobile application that allows users to manage their finances, track expenses, and make payments securely.",
-        "technologies": ["Flutter", "Dart", "Firebase"],
-        "company": "Federación de Cooperativas de Ahorro y Crédito",
+        "description": "Permite a los clientes de SISTEMA FEDECREDITO realizar operaciones bancarias locales y a otros bancos.",
+        "technologies": ["Kotlin", "Java", "Firebase"],
+        "company": "Influencia Digital",
         "logo": "images/logo_fedemovil.png",
         "images": [
-            "assets/images/fedemovil1.png",
-            "assets/images/fedemovil2.png",
-            "assets/images/fedemovil3.png"
+            "images/projects/fedemovil_1.png",
+            "images/projects/fedemovil_2.png",
+            "images/projects/fedemovil_3.png",
+            "images/projects/fedemovil_4.png",
+            "images/projects/fedemovil_5.png"
+        ],
+        "links": [
+            {
+                "title": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=sv.fedecredito.fedemovil",
+                "iconUrl": "images/icons/google_play.png"
+            }
         ]
     }
 ]

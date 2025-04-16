@@ -1,4 +1,5 @@
 import 'package:dev_portfolio/data/model/project.dart';
+import 'package:dev_portfolio/view/components/project_detail_dialog.dart';
 import 'package:flutter/material.dart';
 
 class ProjectCard extends StatelessWidget {
@@ -10,16 +11,20 @@ class ProjectCard extends StatelessWidget {
     return Flexible(
       child: Card(
         elevation: 0,
-        child: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: ListTile(
-            leading: Image.asset(project.logo),
-            title: Text(project.name),
-            subtitle: Text(project.description),
-            trailing: IconButton(
-              onPressed: () {},
-              icon: Icon(Icons.arrow_forward_ios_rounded),
-            ),
+        child: ListTile(
+          leading: Image.asset(project.logo),
+          title: Text(project.name),
+          subtitle: Text(project.description),
+          trailing: IconButton(
+            onPressed: () {
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return ProjectDetailDialog(project: project);
+                },
+              );
+            },
+            icon: Icon(Icons.arrow_forward_ios_rounded),
           ),
         ),
       ),

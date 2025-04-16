@@ -12,6 +12,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
+  final List<String> _titles = ['Perfil', 'Habilidades', 'Proyectos'];
   final List<Widget> _pages = [
     ProfileScreen(),
     SkillsScreen(),
@@ -22,7 +23,7 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     final isWide = MediaQuery.of(context).size.width >= 800;
     return Scaffold(
-      //appBar: AppBar(title: Text('Mi portafolio')),
+      appBar: AppBar(title: Text(_titles[_selectedIndex]), centerTitle: false),
       body: Row(children: [_navigationRail(isWide), _content()]),
     );
   }

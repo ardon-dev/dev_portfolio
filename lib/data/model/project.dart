@@ -1,3 +1,5 @@
+import 'package:dev_portfolio/data/model/link.dart';
+
 class Project {
   final String name;
   final String description;
@@ -5,6 +7,7 @@ class Project {
   final String logo;
   final List<String> techonologies;
   final List<String> images;
+  final List<Link> links;
 
   Project({
     required this.name,
@@ -13,6 +16,7 @@ class Project {
     required this.logo,
     required this.techonologies,
     required this.images,
+    required this.links,
   });
 
   factory Project.fromJson(Map<String, dynamic> json) {
@@ -22,6 +26,9 @@ class Project {
     // Images
     var jsonImages = json['images'] as List;
     List<String> images = jsonImages.map((e) => e.toString()).toList();
+    // Links
+    var jsonLinks = json['links'] as List;
+    List<Link> links = jsonLinks.map((e) => Link.fromJson(e)).toList();
     return Project(
       name: json['name'] as String,
       description: json['description'] as String,
@@ -29,6 +36,7 @@ class Project {
       logo: json['logo'] as String,
       techonologies: techonologies,
       images: images,
+      links: links,
     );
   }
 }
