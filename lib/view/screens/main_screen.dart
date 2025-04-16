@@ -1,4 +1,5 @@
 import 'package:dev_portfolio/view/screens/profile_screen.dart';
+import 'package:dev_portfolio/view/screens/projects_screen.dart';
 import 'package:dev_portfolio/view/screens/skills_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class _MainScreenState extends State<MainScreen> {
   final List<Widget> _pages = [
     ProfileScreen(),
     SkillsScreen(),
-    ProfileScreen(),
+    ProjectsScreen(),
   ];
 
   @override

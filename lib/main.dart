@@ -1,5 +1,7 @@
+import 'package:dev_portfolio/data/repository/project_repository.dart';
 import 'package:dev_portfolio/view/screens/main_screen.dart';
 import 'package:dev_portfolio/viewmodel/profile_viewmodel.dart';
+import 'package:dev_portfolio/viewmodel/projects_viewmodel.dart';
 import 'package:dev_portfolio/viewmodel/skills_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -17,6 +19,7 @@ class MainApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (_) => ProfileViewmodel()),
         ChangeNotifierProvider(create: (_) => SkillsViewmodel()),
+        ChangeNotifierProvider(create: (_) => ProjectsViewmodel()),
       ],
       child: MaterialApp(
         themeMode: ThemeMode.light,

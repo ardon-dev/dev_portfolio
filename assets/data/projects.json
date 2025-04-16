@@ -1,0 +1,14 @@
+[
+    {
+        "name": "FedeMovil",
+        "description": "FedeMovil is a mobile application that allows users to manage their finances, track expenses, and make payments securely.",
+        "technologies": ["Flutter", "Dart", "Firebase"],
+        "company": "Federación de Cooperativas de Ahorro y Crédito",
+        "logo": "images/logo_fedemovil.png",
+        "images": [
+            "assets/images/fedemovil1.png",
+            "assets/images/fedemovil2.png",
+            "assets/images/fedemovil3.png"
+        ]
+    }
+]
