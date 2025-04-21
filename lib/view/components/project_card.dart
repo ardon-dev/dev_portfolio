@@ -14,7 +14,11 @@ class ProjectCard extends StatelessWidget {
         child: ListTile(
           leading: Image.asset(project.logo),
           title: Text(project.name),
-          subtitle: Text(project.description),
+          subtitle: Text(
+            project.description,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+          ),
           trailing: IconButton(
             onPressed: () {
               showDialog(

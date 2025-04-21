@@ -1,8 +1,29 @@
 [
     {
+        "name": "Banco Hipotecario",
+        "description": "Como pasante en Elaniin, colaboré en el desarrollo de funcionalidades para la aplicación móvil de Banco Hipotecario, participando activamente en un proyecto real para producción. Esta experiencia me permitió aplicar conocimientos de Kotlin y buenas prácticas de desarrollo Android, trabajando en equipo con desarrolladores experimentados y contribuyendo al crecimiento del producto.",
+        "technologies": ["Kotlin", "Firebase", "Architecture components", "AndroidX"],
+        "company": "Elaniin",
+        "logo": "images/logo_bh.png",
+        "images": [
+            "images/projects/bh_1.png",
+            "images/projects/bh_2.png",
+            "images/projects/bh_3.png",
+            "images/projects/bh_4.png",
+            "images/projects/bh_5.png"
+        ],
+        "links": [
+            {
+                "title": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.bancohipotecario.android&hl=es_SV",
+                "iconUrl": "images/icons/google_play.png"
+            }
+        ]
+    },
+    {
         "name": "FedeMovil",
-        "description": "Permite a los clientes de SISTEMA FEDECREDITO realizar operaciones bancarias locales y a otros bancos.",
-        "technologies": ["Kotlin", "Java", "Firebase"],
+        "description": "Como desarrollador Android en Influencia Digital, estuve a cargo del desarrollo continuo de la aplicación FedeMovil, asegurando su estabilidad y evolución funcional. Lideré una migración completa del proyecto con el objetivo de optimizar su infraestructura y escalabilidad, incorporando las tecnologías y prácticas recomendadas en ese momento para el desarrollo Android, lo que permitió mejorar el rendimiento, mantenibilidad y preparación del producto para futuras actualizaciones.",
+        "technologies": ["Kotlin", "Java", "Firebase", "Architecture components", "AndroidX"],
         "company": "Influencia Digital",
         "logo": "images/logo_fedemovil.png",
         "images": [

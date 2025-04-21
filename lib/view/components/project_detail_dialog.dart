@@ -28,6 +28,7 @@ class ProjectDetailDialog extends StatelessWidget {
         // Description
         SizedBox(height: 16),
         _title(context, 'Descripción'),
+        SizedBox(height: 8.0),
         SizedBox(
           width: double.infinity,
           child: Text(project.description, style: context.textTheme.bodyMedium),
@@ -58,19 +59,22 @@ class ProjectDetailDialog extends StatelessWidget {
     return SizedBox(
       width: 300,
       height: 300,
-      child: CarouselView(
-        itemExtent: 180,
-        children:
-            project.images
-                .map(
-                  (e) => Image.asset(
-                    e,
-                    width: double.infinity,
-                    height: double.infinity,
-                    fit: BoxFit.cover,
-                  ),
-                )
-                .toList(),
+      child: NotificationListener<UserScrollNotification>(
+        onNotification: (notification) => true,
+        child: CarouselView(
+          itemExtent: 180,
+          children:
+              project.images
+                  .map(
+                    (e) => Image.asset(
+                      e,
+                      width: double.infinity,
+                      height: double.infinity,
+                      fit: BoxFit.cover,
+                    ),
+                  )
+                  .toList(),
+        ),
       ),
     );
   }
