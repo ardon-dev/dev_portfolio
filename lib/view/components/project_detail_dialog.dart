@@ -81,6 +81,7 @@ class ProjectDetailDialog extends StatelessWidget {
 
   Row _links() {
     return Row(
+      spacing: 16.0,
       children:
           project.links
               .map((e) => LinkButton(link: e, onClick: () {}))

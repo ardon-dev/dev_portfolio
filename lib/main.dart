@@ -21,17 +21,17 @@ class MainApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => ProjectsViewmodel()),
       ],
       child: MaterialApp(
-        themeMode: ThemeMode.light,
+        themeMode: ThemeMode.system,
         darkTheme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.white,
+            seedColor: Colors.green,
             brightness: Brightness.dark,
           ),
         ),
         theme: ThemeData(
           useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         ),
         home: const MainScreen(),
       ),

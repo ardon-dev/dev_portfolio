@@ -22,9 +22,9 @@
     },
     {
         "name": "FedeMovil",
-        "description": "Como desarrollador Android en Influencia Digital, estuve a cargo del desarrollo continuo de la aplicación FedeMovil, asegurando su estabilidad y evolución funcional. Lideré una migración completa del proyecto con el objetivo de optimizar su infraestructura y escalabilidad, incorporando las tecnologías y prácticas recomendadas en ese momento para el desarrollo Android, lo que permitió mejorar el rendimiento, mantenibilidad y preparación del producto para futuras actualizaciones.",
+        "description": "Como desarrollador Android en Influencia Digital / iDigitalStudios, estuve a cargo del desarrollo continuo de la aplicación FedeMovil, asegurando su estabilidad y evolución funcional. Lideré una migración completa del proyecto con el objetivo de optimizar su infraestructura y escalabilidad, incorporando las tecnologías y prácticas recomendadas en ese momento para el desarrollo Android, lo que permitió mejorar el rendimiento, mantenibilidad y preparación del producto para futuras actualizaciones.",
         "technologies": ["Kotlin", "Java", "Firebase", "Architecture components", "AndroidX"],
-        "company": "Influencia Digital",
+        "company": "Influencia Digital / iDigitalStudios",
         "logo": "images/logo_fedemovil.png",
         "images": [
             "images/projects/fedemovil_1.png",
@@ -37,6 +37,89 @@
             {
                 "title": "Google Play",
                 "url": "https://play.google.com/store/apps/details?id=sv.fedecredito.fedemovil",
+                "iconUrl": "images/icons/google_play.png"
+            },
+            {
+                "title": "App Gallery",
+                "url": "https://appgallery.huawei.com/app/C102500899",
+                "iconUrl": "images/icons/huawei.png"
+            }
+        ]
+    },
+    {
+        "name": "Comersal",
+        "description": "Como desarrollador Android en Influencia Digital / iDigitalStudios, me encargué de finalizar el desarrollo de la aplicación de Comersal y brindé mantenimiento continuo, incorporando nuevas funcionalidades y ofreciendo soporte técnico de manera proactiva para mejorar la experiencia del usuario y la estabilidad de la app.",
+        "technologies": ["Kotlin", "Firebase", "Architecture components", "AndroidX"],
+        "company": "Influencia Digital / iDigitalStudios",
+        "logo": "images/logo_comersal.png",
+        "images": [
+            "images/projects/comersal_1.png",
+            "images/projects/comersal_2.png",
+            "images/projects/comersal_3.png",
+            "images/projects/comersal_4.png"
+        ],
+        "links": [
+           
+        ]
+    },
+    {
+        "name": "HOME AVANCE",
+        "description": "Como desarrollador Android en Influencia Digital / iDigitalStudios, me encargué de finalizar el desarrollo de la aplicación de HOME AVANCE y brindé mantenimiento continuo, incorporando nuevas funcionalidades y ofreciendo soporte técnico de manera proactiva para mejorar la experiencia del usuario y la estabilidad de la app.",
+        "technologies": ["Kotlin", "Firebase", "Architecture components", "AndroidX", "SDK Pagadito"],
+        "company": "Influencia Digital / iDigitalStudios",
+        "logo": "images/logo_home_avance.png",
+        "images": [
+            "images/projects/home_1.png",
+            "images/projects/home_2.png",
+            "images/projects/home_3.png",
+            "images/projects/home_4.png"
+        ],
+        "links": [
+            {
+                "title": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=avanceingenieros.com.app",
+                "iconUrl": "images/icons/google_play.png"
+            }
+        ]
+    },
+    {
+        "name": "Clash of Fans 2022",
+        "description": "Como desarrollador Android en Influencia Digital / iDigitalStudios, me encargué de finalizar el desarrollo de la aplicación de HOME AVANCE y brindé mantenimiento continuo, incorporando nuevas funcionalidades y ofreciendo soporte técnico de manera proactiva para mejorar la experiencia del usuario y la estabilidad de la app.",
+        "technologies": ["Kotlin", "Firebase", "Architecture components", "AndroidX", "SDK Pagadito"],
+        "company": "Influencia Digital / iDigitalStudios",
+        "logo": "images/logo_cof.png",
+        "images": [
+            "images/projects/cof_1.webp",
+            "images/projects/cof_2.webp",
+            "images/projects/cof_3.webp",
+            "images/projects/cof_4.webp",
+            "images/projects/cof_5.webp"
+        ],
+        "links": [
+            {
+                "title": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=avanceingenieros.com.app",
+                "iconUrl": "images/icons/google_play.png"
+            }
+        ]
+    },
+    {
+        "name": "APP CUSCATLÁN",
+        "description": "Como desarrollador móvil Android en Tecnoin, formé parte del equipo encargado del desarrollo de la aplicación móvil de Banco Cuscatlán. Mi trabajo incluyó la implementación de un módulo para integrar Google Pay, así como la colaboración en el desarrollo de funcionalidades clave dentro de la app, contribuyendo a mejorar la experiencia del usuario.",
+        "technologies": ["Kotlin", "Firebase", "Architecture components", "AndroidX", "SDK Pagadito"],
+        "company": "Tecnoin",
+        "logo": "images/logo_cusca.png",
+        "images": [
+            "images/projects/cusca_1.png",
+            "images/projects/cusca_2.png",
+            "images/projects/cusca_3.png",
+            "images/projects/cusca_4.png",
+            "images/projects/cusca_5.png"
+        ],
+        "links": [
+            {
+                "title": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.bancocuscatlan.cuscatlanmovilprd",
                 "iconUrl": "images/icons/google_play.png"
             }
         ]

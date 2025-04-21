@@ -18,7 +18,10 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
 
     return SizedBox(
       width: 800,
-      child: ListView(
+      child: GridView.extent(
+        mainAxisSpacing: 16.0,
+        crossAxisSpacing: 16.0,
+        maxCrossAxisExtent: 200,
         padding: EdgeInsets.all(16.0),
         children:
             viewModel.projects.map((e) => ProjectCard(project: e)).toList(),
