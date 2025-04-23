@@ -3,18 +3,15 @@ import 'package:dev_portfolio/viewmodel/projects_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class ProjectsScreen extends StatefulWidget {
+class ProjectsScreen extends StatelessWidget {
   const ProjectsScreen({super.key});
 
-  @override
-  State<ProjectsScreen> createState() => _ProjectsScreenState();
-}
-
-class _ProjectsScreenState extends State<ProjectsScreen> {
   @override
   Widget build(BuildContext context) {
     final viewModel = Provider.of<ProjectsViewmodel>(context);
     viewModel.fetchProjects();
+    var projectWidgets =
+        viewModel.projects.map((e) => ProjectCard(project: e)).toList();
 
     return SizedBox(
       width: 800,
@@ -23,8 +20,7 @@ class _ProjectsScreenState extends State<ProjectsScreen> {
         crossAxisSpacing: 16.0,
         maxCrossAxisExtent: 200,
         padding: EdgeInsets.all(16.0),
-        children:
-            viewModel.projects.map((e) => ProjectCard(project: e)).toList(),
+        children: projectWidgets,
       ),
     );
   }

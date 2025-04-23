@@ -24,32 +24,30 @@ class _ProjectCardState extends State<ProjectCard> {
 
   @override
   Widget build(BuildContext context) {
-    double blur = isHover ? 30.0 : 0;
+    double blur = isHover ? 20.0 : 0;
 
-    return Flexible(
-      child: GestureDetector(
-        onTap: () {
-          showDialog(
-            context: context,
-            builder: (BuildContext context) {
-              return ProjectDetailDialog(project: widget.project);
-            },
-          );
+    return GestureDetector(
+      onTap: () {
+        showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return ProjectDetailDialog(project: widget.project);
+          },
+        );
+      },
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        onEnter: (event) {
+          _setHover(true);
         },
-        child: MouseRegion(
-          cursor: SystemMouseCursors.click,
-          onEnter: (event) {
-            _setHover(true);
-          },
-          onExit: (event) {
-            _setHover(false);
-          },
-          child: Card(
-            elevation: isHover ? 12 : 0,
-            child: Container(
-              decoration: _imgBackgroundDecoration(),
-              child: _blurContainer(blur, context),
-            ),
+        onExit: (event) {
+          _setHover(false);
+        },
+        child: Card(
+          elevation: isHover ? 12 : 0,
+          child: Container(
+            decoration: _imgBackgroundDecoration(),
+            child: _blurContainer(blur, context),
           ),
         ),
       ),
@@ -88,7 +86,6 @@ class _ProjectCardState extends State<ProjectCard> {
           Shadow(offset: Offset(3.0, 0), blurRadius: 20.0, color: Colors.black),
         ],
       ),
-
       textAlign: TextAlign.center,
     );
   }
