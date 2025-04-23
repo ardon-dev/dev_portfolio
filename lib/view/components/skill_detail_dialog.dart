@@ -37,7 +37,7 @@ class _SkillDetailDialogState extends State<SkillDetailDialog> {
             child: ListView(
               children: [
                 // Image
-                Image.network(widget.skill.icon, width: 48, height: 48),
+                Image.asset(widget.skill.icon, width: 48, height: 48),
                 SizedBox(height: 8.0),
 
                 // Name

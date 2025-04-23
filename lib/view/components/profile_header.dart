@@ -68,7 +68,7 @@ class ProfileHeader extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(300),
       child: Image.asset(
-        'images/me.png',
+        'assets/images/avatar.webp',
         fit: BoxFit.cover,
         alignment: Alignment.topCenter,
         width: screenWidth >= 800 ? 200 : 125,

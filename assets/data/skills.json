@@ -3,7 +3,7 @@
         "name": "Android",
         "description": "Análisis, diseño y desarrollo de aplicaciones nativas para Android.",
         "experience": "5 años",
-        "icon": "https://cdn-icons-png.flaticon.com/512/179/179308.png",
+        "icon": "assets/images/logos/android.webp",
         "tools": [
             "Java",
             "Koltin",
@@ -18,7 +18,7 @@
             "Koin",
             "Dagger Hilt",
             "AndroidX",
-            "Architecture components",
+            "Android Jetpack",
             "Room",
             "Data Store",
             "Retrofit",
@@ -34,7 +34,7 @@
         "name": "iOS",
         "description": "Análisis, diseño y desarrollo de aplicaciones nativas para iOS.",
         "experience": "1 año",
-        "icon": "https://cdn-icons-png.flaticon.com/512/0/747.png",
+        "icon": "assets/images/logos/apple.webp",
         "tools": [
             "Swift",
             "SwiftUI",
@@ -51,7 +51,7 @@
         "name": "Flutter",
         "description": "Análisis, diseño y desarrollo de aplicaciones multiplataforma para Android, iOS, Escritorio y Web.",
         "experience": "1 año",
-        "icon": "https://img.icons8.com/color/512/flutter.png",
+        "icon": "assets/images/logos/flutter.webp",
         "tools": [
             "Dart",
             "Kotlin",
@@ -64,7 +64,7 @@
         "name": "Koltin multiplatform",
         "description": "Análisis, diseño y desarrollo de aplicaciones multiplataforma para Android, iOS y Escritorio.",
         "experience": "-1 año",
-        "icon": "assets/images/kmp.png",
+        "icon": "assets/images/logos/kmp.webp",
         "tools": [
             "Kotlin",
             "Swift",
@@ -78,7 +78,7 @@
         "name": "Ktor",
         "description": "Desarrollo de API REST con Kotlin.",
         "experience": "-1 año",
-        "icon": "https://resources.jetbrains.com/storage/products/company/brand/logos/Ktor_icon.png",
+        "icon": "assets/images/logos/ktor.webp",
         "tools": [
             "Kotlin",
             "PostgreSQL",
@@ -97,7 +97,7 @@
         "name": "Laravel",
         "description": "Desarrollo de API REST con PHP.",
         "experience": "1 año",
-        "icon": "https://static-00.iconduck.com/assets.00/laravel-icon-995x1024-dk77ahh4.png",
+        "icon": "assets/images/logos/laravel.webp",
         "tools": [
             "PHP",
             "MySQL",
@@ -109,7 +109,7 @@
         "name": "GIT",
         "description": "Plataformas de versionamiento y metodologías.",
         "experience": "5 años",
-        "icon": "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
+        "icon": "assets/images/logos/git.webp",
         "tools": [
             "Github",
             "Github actions",
@@ -122,7 +122,7 @@
         "name": "Herramientas",
         "description": "IDE's, plataformas y programas.",
         "experience": "5 años",
-        "icon": "https://cdn-icons-png.flaticon.com/512/8847/8847059.png",
+        "icon": "assets/images/logos/tools.webp",
         "tools": [
             "Android Studio",
             "IntelliJ",

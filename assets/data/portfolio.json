@@ -7,22 +7,22 @@
             {
                 "title": "LinkedIn",
                 "url": "https://www.linkedin.com/in/josue-ardon/",
-                "iconUrl": "https://cdn-icons-png.flaticon.com/512/3128/3128219.png"
+                "iconUrl": "assets/images/icons/linkedin.webp"
             },
             {
                 "title": "Github",
                 "url": "https://github.com/ardon-dev",
-                "iconUrl": "https://cdn-icons-png.flaticon.com/512/2111/2111432.png"
+                "iconUrl": "assets/images/icons/github.webp"
             },
             {
                 "title": "Gmail",
                 "url": "josueardon.developer@gmail.com",
-                "iconUrl": "https://cdn-icons-png.flaticon.com/512/4926/4926635.png"
+                "iconUrl": "assets/images/icons/gmail.webp"
             },
             {
                 "title": "WhatsApp",
                 "url": "+50370859890",
-                "iconUrl": "https://cdn-icons-png.flaticon.com/512/1384/1384023.png"
+                "iconUrl": "assets/images/icons/whatsapp.webp"
             }
         ],
         "experience": [
@@ -33,7 +33,7 @@
                 "endDate": "sep 2019",
                 "description": "",
                 "location": "San Salvador",
-                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI4ibmbYjS-NOk_1AKu2W-ZVSqpyHHbRqYhQ&s",
+                "logo": "assets/images/logos/elaniin.webp",
                 "tasks": [
                     "Aprendizaje de Android avanzado.",
                     "Colaboración en proyecto real, desarrollando algunas funcionalidades.",
@@ -47,7 +47,7 @@
                 "endDate": "ago 2020",
                 "description": "",
                 "location": "San Salvador",
-                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPX11Y0zqHKnH1uvG4U8c41TdmnwHH0tsSoA&s",
+                "logo": "assets/images/logos/sys.webp",
                 "tasks": [
                     "Diseño y prototipado de aplicaciones móviles y sitios web en Figma.",
                     "Colaboración en un proyecto para entidad gubernamental, desarrollando algunas funcionalidades.",
@@ -61,7 +61,7 @@
                 "endDate": "oct 2021",
                 "description": "",
                 "location": "San Salvador",
-                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBcplAcgmqLFSXyU0obG1QRT6lVqkGb6z0Pg&s",
+                "logo": "assets/images/logos/ideaworks.webp",
                 "tasks": [
                     "Desarrollo android desde cero y desarrollo continuo de varios proyectos.",
                     "Soporte técnico.",
@@ -76,7 +76,7 @@
                 "endDate": "may 2022",
                 "description": "",
                 "location": "San Salvador",
-                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtQ1a7G8ELPlyMEHiY9Q5WsPLaz2FKLBBCgQ&s",
+                "logo": "assets/images/logos/applaudo.webp",
                 "tasks": [
                     "Aprendizaje de nuevas herramientas y tecnologías para desarrollo."
                 ]
@@ -88,7 +88,7 @@
                 "endDate": "may 2024",
                 "description": "",
                 "location": "San Salvador",
-                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98aXEAiz2exWRjgo2pIjZXrixltbaWE9dJg&s",
+                "logo": "assets/images/logos/idigitalstudios.webp",
                 "tasks": [
                     "Desarrollo android desde cero y desarrollo continuo de varios proyectos.",
                     "Soporte técnico.",
@@ -103,7 +103,7 @@
                 "endDate": "dec 2024",
                 "description": "",
                 "location": "San Salvador",
-                "logo": "https://media.licdn.com/dms/image/v2/D4E0BAQHnfx7MHGmVpA/company-logo_200_200/company-logo_200_200/0/1719615370402/tecnoin_1_logo?e=2147483647&v=beta&t=jXTm41cGdBkeCijgYILLk7QZw8SfEfYnysuJQ07R6A0",
+                "logo": "assets/images/logos/tecnoin.webp",
                 "tasks": [
                     "Parte del equipo de desarrollo de Banco Cuscatlán, colaborando en el desarrollo de algunas funcionalidades de aplicación Android."
                 ]
@@ -118,7 +118,7 @@
                 "status": "Pensum finalizado",
                 "description": "Formación técnica orientada al diseño y desarrollo de aplicaciones móviles, con énfasis en lenguajes como Java, Kotlin y Swift, manejo de bases de datos y desarrollo de API REST.",
                 "location": "San Salvador",
-                "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv9i3NjsiuX6BAkk6Q0qNe7blWXO2ygAyqjw&s"
+                "logo": "assets/images/logos/udb.webp"
             }
         ]
     }

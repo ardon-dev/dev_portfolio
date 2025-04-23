@@ -49,7 +49,7 @@ class EducationCard extends StatelessWidget {
       // Logo
       ClipRRect(
         borderRadius: BorderRadius.circular(36.0),
-        child: Image.network(education.logo, width: 36, height: 36),
+        child: Image.asset(education.logo, width: 36, height: 36),
       ),
 
       // Institution
