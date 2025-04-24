@@ -53,7 +53,7 @@ class ExperienceCard extends StatelessWidget {
       // Logo
       ClipRRect(
         borderRadius: BorderRadius.circular(36.0),
-        child: Image.network(experience.logo, width: 36, height: 36),
+        child: Image.asset(experience.logo, width: 36, height: 36),
       ),
 
       // Position
