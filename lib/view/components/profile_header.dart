@@ -33,7 +33,18 @@ class ProfileHeader extends StatelessWidget {
       runSpacing: 16.0,
       children:
           profile.links
-              .map((link) => LinkButton(link: link, onClick: () {}))
+              .map(
+                (link) => LinkButton(
+                  link: link,
+                  onClick: () {
+                    if (link.url.contains('@')) {
+                      sendEmail(link.url);
+                    } else {
+                      launchURL(link.url);
+                    }
+                  },
+                ),
+              )
               .toList(),
     );
   }

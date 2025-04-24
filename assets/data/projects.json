@@ -100,7 +100,7 @@
     {
         "name": "APP CUSCATLÁN",
         "description": "Como desarrollador móvil Android en Tecnoin, formé parte del equipo encargado del desarrollo de la aplicación móvil de Banco Cuscatlán. Mi trabajo incluyó la implementación de un módulo para integrar Google Pay, así como la colaboración en el desarrollo de funcionalidades clave dentro de la app, contribuyendo a mejorar la experiencia del usuario.",
-        "technologies": ["Kotlin", "Jetpack Compose", "Firebase", "Google Pay", "Networking", "Android Jetpack", "MVVM", "Clean architecture", "AndroidX", "Git", "Unit Testing"],
+        "technologies": ["Kotlin", "Dart", "Jetpack Compose", "Firebase", "Google Pay", "Networking", "Android Jetpack", "MVVM", "Clean architecture", "AndroidX", "Git", "Unit Testing"],
         "company": "Tecnoin",
         "logo": "assets/images/logos/cusca.webp",
         "images": [

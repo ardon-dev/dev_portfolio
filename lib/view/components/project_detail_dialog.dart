@@ -94,7 +94,14 @@ class ProjectDetailDialog extends StatelessWidget {
       spacing: 16.0,
       children:
           project.links
-              .map((e) => LinkButton(link: e, onClick: () {}))
+              .map(
+                (e) => LinkButton(
+                  link: e,
+                  onClick: () {
+                    launchURL(e.url);
+                  },
+                ),
+              )
               .toList(),
     );
   }
