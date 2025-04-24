@@ -1,5 +1,6 @@
 import 'package:dev_portfolio/data/model/project.dart';
 import 'package:dev_portfolio/main.dart';
+import 'package:dev_portfolio/view/components/fullscreen_dialog.dart';
 import 'package:dev_portfolio/view/components/link_button.dart';
 import 'package:dev_portfolio/view/components/skill_tool.dart';
 import 'package:flutter/material.dart';
@@ -50,18 +51,27 @@ class ProjectDetailDialog extends StatelessWidget {
         SizedBox(height: 24.0),
         _title(context, 'Imágenes'),
         SizedBox(height: 8.0),
-        _imageCarousel(),
+        _imageCarousel(context),
       ],
     );
   }
 
-  SizedBox _imageCarousel() {
+  SizedBox _imageCarousel(BuildContext context) {
     return SizedBox(
       width: 300,
       height: 300,
       child: NotificationListener<UserScrollNotification>(
         onNotification: (notification) => true,
         child: CarouselView(
+          onTap: (index) {
+            showDialog(
+              useRootNavigator: false,
+              context: context,
+              builder: (BuildContext context) {
+                return FullscreenDialog(image: project.images[index]);
+              },
+            );
+          },
           itemExtent: 180,
           children:
               project.images
