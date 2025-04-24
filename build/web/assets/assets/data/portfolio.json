@@ -1,0 +1,125 @@
+{
+    "profile": {
+        "fullName": "Edgard Ardón",
+        "aboutText": "Desarrollador de aplicaciones Android con más de 5 años de experiencia, siempre buscando crear aplicaciones sólidas y enfocadas a la experiencia de usuario, utilizando las mejores prácticas y tecnologías recomendadas para asegurar una aplicación de calidad.",
+        "role": "Mobile Developer",
+        "links": [
+            {
+                "title": "LinkedIn",
+                "url": "https://www.linkedin.com/in/josue-ardon/",
+                "iconUrl": "assets/images/icons/linkedin.webp"
+            },
+            {
+                "title": "Github",
+                "url": "https://github.com/ardon-dev",
+                "iconUrl": "assets/images/icons/github.webp"
+            },
+            {
+                "title": "Gmail",
+                "url": "josueardon.developer@gmail.com",
+                "iconUrl": "assets/images/icons/gmail.webp"
+            },
+            {
+                "title": "WhatsApp",
+                "url": "https://wa.me/50370859890",
+                "iconUrl": "assets/images/icons/whatsapp.webp"
+            }
+        ],
+        "experience": [
+            {
+                "place": "Elaniin Tech Company",
+                "role": "Android Developer Intern",
+                "startDate": "jun 2019",
+                "endDate": "sep 2019",
+                "description": "",
+                "location": "San Salvador",
+                "logo": "assets/images/logos/elaniin.webp",
+                "tasks": [
+                    "Aprendizaje de Android avanzado.",
+                    "Colaboración en proyecto real, desarrollando algunas funcionalidades.",
+                    "Trabajo en equipo con SCRUM."
+                ]
+            },
+            {
+                "place": "SYS Consulting",
+                "role": "Jr Developer",
+                "startDate": "ene 2020",
+                "endDate": "ago 2020",
+                "description": "",
+                "location": "San Salvador",
+                "logo": "assets/images/logos/sys.webp",
+                "tasks": [
+                    "Diseño y prototipado de aplicaciones móviles y sitios web en Figma.",
+                    "Colaboración en un proyecto para entidad gubernamental, desarrollando algunas funcionalidades.",
+                    "Desarrollo entero (Backend y Frontend) de un proyecto de aplicación interna."
+                ]
+            },
+            {
+                "place": "IdeaWorks - Influencia Digital",
+                "role": "Android Developer",
+                "startDate": "oct 2020",
+                "endDate": "oct 2021",
+                "description": "",
+                "location": "San Salvador",
+                "logo": "assets/images/logos/ideaworks.webp",
+                "tasks": [
+                    "Desarrollo android desde cero y desarrollo continuo de varios proyectos.",
+                    "Soporte técnico.",
+                    "Lider de un pequeño equipo mobile.",
+                    "Responsable de publicaciones y monitoreo de las aplicaciones."
+                ]
+            },
+            {
+                "place": "Applaudo Studios",
+                "role": "Android Developer",
+                "startDate": "oct 2021",
+                "endDate": "may 2022",
+                "description": "",
+                "location": "San Salvador",
+                "logo": "assets/images/logos/applaudo.webp",
+                "tasks": [
+                    "Aprendizaje de nuevas herramientas y tecnologías para desarrollo."
+                ]
+            },
+            {
+                "place": "iDigitalStudios",
+                "role": "Senior Android Developer",
+                "startDate": "may 2022",
+                "endDate": "may 2024",
+                "description": "",
+                "location": "San Salvador",
+                "logo": "assets/images/logos/idigitalstudios.webp",
+                "tasks": [
+                    "Desarrollo android desde cero y desarrollo continuo de varios proyectos.",
+                    "Soporte técnico.",
+                    "Documentación técnica y realización de estimaciones.",
+                    "Responsable de publicaciones y monitoreo de las aplicaciones."
+                ]
+            },
+            {
+                "place": "Tecnologías Innovadoras",
+                "role": "Android Mobile Developer",
+                "startDate": "sep 2024",
+                "endDate": "dec 2024",
+                "description": "",
+                "location": "San Salvador",
+                "logo": "assets/images/logos/tecnoin.webp",
+                "tasks": [
+                    "Parte del equipo de desarrollo de Banco Cuscatlán, colaborando en el desarrollo de algunas funcionalidades de aplicación Android."
+                ]
+            }
+        ],
+        "education": [
+            {
+                "institution": "Universidad Don Bosco",
+                "career": "Técnico en desarrollo de Aplicaciones Móviles",
+                "startDate": "jul 2017",
+                "endDate": "nov 2019",
+                "status": "Pensum finalizado",
+                "description": "Formación técnica orientada al diseño y desarrollo de aplicaciones móviles, con énfasis en lenguajes como Java, Kotlin y Swift, manejo de bases de datos y desarrollo de API REST.",
+                "location": "San Salvador",
+                "logo": "assets/images/logos/udb.webp"
+            }
+        ]
+    }
+}

@@ -1,0 +1,121 @@
+[
+    {
+        "name": "Banco Hipotecario",
+        "description": "Como pasante en Elaniin, colaboré en el desarrollo de funcionalidades para la aplicación móvil de Banco Hipotecario, participando activamente en un proyecto real para producción. Esta experiencia me permitió aplicar conocimientos de Kotlin y buenas prácticas de desarrollo Android, trabajando en equipo con desarrolladores experimentados y contribuyendo al crecimiento del producto.",
+        "technologies": ["Kotlin", "Firebase", "Networking", "Android Jetpack", "MVVM", "AndroidX", "Git", "Unit Testing"],
+        "company": "Elaniin",
+        "logo": "assets/images/logos/bh.webp",
+        "images": [
+            "assets/images/projects/bh/1.webp",
+            "assets/images/projects/bh/2.webp",
+            "assets/images/projects/bh/3.webp",
+            "assets/images/projects/bh/4.webp",
+            "assets/images/projects/bh/5.webp"
+        ],
+        "links": [
+            {
+                "title": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.bancohipotecario.android&hl=es_SV",
+                "iconUrl": "assets/images/icons/google_play.webp"
+            }
+        ]
+    },
+    {
+        "name": "FedeMovil",
+        "description": "Como desarrollador Android en Influencia Digital / iDigitalStudios, estuve a cargo del desarrollo continuo de la aplicación FedeMovil, asegurando su estabilidad y evolución funcional. Lideré una migración completa del proyecto con el objetivo de optimizar su infraestructura y escalabilidad, incorporando las tecnologías y prácticas recomendadas en ese momento para el desarrollo Android, lo que permitió mejorar el rendimiento, mantenibilidad y preparación del producto para futuras actualizaciones.",
+        "technologies": ["Kotlin", "Java", "Firebase", "Networking", "Google Maps", "Huawei Maps", "MVVM", "Android Jetpack", "AndroidX", "Git", "Unit Testing"],
+        "company": "Influencia Digital / iDigitalStudios",
+        "logo": "assets/images/logos/fedemovil.webp",
+        "images": [
+            "assets/images/projects/fedemovil/1.webp",
+            "assets/images/projects/fedemovil/2.webp",
+            "assets/images/projects/fedemovil/3.webp",
+            "assets/images/projects/fedemovil/4.webp",
+            "assets/images/projects/fedemovil/5.webp"
+        ],
+        "links": [
+            {
+                "title": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=sv.fedecredito.fedemovil",
+                "iconUrl": "assets/images/icons/google_play.webp"
+            },
+            {
+                "title": "App Gallery",
+                "url": "https://appgallery.huawei.com/app/C102500899",
+                "iconUrl": "assets/images/icons/huawei.webp"
+            }
+        ]
+    },
+    {
+        "name": "Comersal",
+        "description": "Como desarrollador Android en Influencia Digital / iDigitalStudios, me encargué de finalizar el desarrollo de la aplicación de Comersal y brindé mantenimiento continuo, incorporando nuevas funcionalidades y ofreciendo soporte técnico de manera proactiva para mejorar la experiencia del usuario y la estabilidad de la app.",
+        "technologies": ["Kotlin", "Firebase", "Networking", "Google Maps","MVVM", "Android Jetpack", "AndroidX", "Git", "Unit Testing"],
+        "company": "Influencia Digital / iDigitalStudios",
+        "logo": "assets/images/logos/comersal.webp",
+        "images": [
+            "assets/images/projects/comersal/1.webp",
+            "assets/images/projects/comersal/2.webp",
+            "assets/images/projects/comersal/3.webp",
+            "assets/images/projects/comersal/4.webp"
+        ],
+        "links": [
+           
+        ]
+    },
+    {
+        "name": "HOME AVANCE",
+        "description": "Como desarrollador Android en Influencia Digital / iDigitalStudios, me encargué de finalizar el desarrollo de la aplicación de HOME AVANCE y brindé mantenimiento continuo, incorporando nuevas funcionalidades y ofreciendo soporte técnico de manera proactiva para mejorar la experiencia del usuario y la estabilidad de la app.",
+        "technologies": ["Kotlin", "Firebase", "Networking", "Android Jetpack", "AndroidX", "SDK Pagadito", "Git", "Unit Testing"],
+        "company": "Influencia Digital / iDigitalStudios",
+        "logo": "assets/images/logos/avance.webp",
+        "images": [
+            "assets/images/projects/avance/1.webp",
+            "assets/images/projects/avance/2.webp",
+            "assets/images/projects/avance/3.webp",
+            "assets/images/projects/avance/4.webp"
+        ],
+        "links": [
+            {
+                "title": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=avanceingenieros.com.app",
+                "iconUrl": "assets/images/icons/google_play.webp"
+            }
+        ]
+    },
+    {
+        "name": "Clash of Fans 2022",
+        "description": "Como desarrollador Android senior en iDigitalStudios, lideré el desarrollo desde cero de una aplicación móvil para la temporada del Mundial de Fútbol 2022. A lo largo del torneo, implementé actualizaciones continuas adaptadas al avance de la competencia.",
+        "technologies": ["Kotlin", "Firebase", "Networking", "Google OAuth", "Android Jetpack", "Clean architecture", "MVVM", "AndroidX", "Git", "Unit Testing"],
+        "company": "iDigitalStudios",
+        "logo": "assets/images/logos/cof.webp",
+        "images": [
+            "assets/images/projects/cof/1.webp",
+            "assets/images/projects/cof/2.webp",
+            "assets/images/projects/cof/3.webp",
+            "assets/images/projects/cof/4.webp",
+            "assets/images/projects/cof/5.webp"
+        ],
+        "links": []
+    },
+    {
+        "name": "APP CUSCATLÁN",
+        "description": "Como desarrollador móvil Android en Tecnoin, formé parte del equipo encargado del desarrollo de la aplicación móvil de Banco Cuscatlán. Mi trabajo incluyó la implementación de un módulo para integrar Google Pay, así como la colaboración en el desarrollo de funcionalidades clave dentro de la app, contribuyendo a mejorar la experiencia del usuario.",
+        "technologies": ["Kotlin", "Dart", "Jetpack Compose", "Firebase", "Google Pay", "Networking", "Android Jetpack", "MVVM", "Clean architecture", "AndroidX", "Git", "Unit Testing"],
+        "company": "Tecnoin",
+        "logo": "assets/images/logos/cusca.webp",
+        "images": [
+            "assets/images/projects/cusca/1.webp",
+            "assets/images/projects/cusca/2.webp",
+            "assets/images/projects/cusca/3.webp",
+            "assets/images/projects/cusca/4.webp",
+            "assets/images/projects/cusca/5.webp"
+        ],
+        "links": [
+            {
+                "title": "Google Play",
+                "url": "https://play.google.com/store/apps/details?id=com.bancocuscatlan.cuscatlanmovilprd",
+                "iconUrl": "assets/images/icons/google_play.webp"
+            }
+        ]
+    }
+]
