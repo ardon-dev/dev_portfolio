@@ -14,6 +14,7 @@ class ExperienceCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(0.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _company(context, experience),
             SizedBox(height: 16.0),
@@ -47,26 +48,34 @@ class ExperienceCard extends StatelessWidget {
     );
   }
 
-  Row _company(BuildContext context, Experience experience) => Row(
-    spacing: 16.0,
-    children: [
-      // Logo
-      ClipRRect(
-        borderRadius: BorderRadius.circular(36.0),
-        child: Image.asset(experience.logo, width: 36, height: 36),
-      ),
+  Widget _company(BuildContext context, Experience experience) {
+    bool isMobile = MediaQuery.of(context).size.width < 600;
+    return Row(
+      spacing: 16.0,
+      children: [
+        // Logo
+        ClipRRect(
+          borderRadius: BorderRadius.circular(36.0),
+          child: Image.asset(experience.logo, width: 36, height: 36),
+        ),
 
-      // Position
-      _headInfo(experience, context),
+        // Position
+        _headInfo(experience, context),
 
-      // Location
-      LocationChip(location: experience.location),
-    ],
-  );
+        // Location
+        !isMobile
+            ? LocationChip(location: experience.location)
+            : SizedBox.shrink(),
+      ],
+    );
+  }
 
   Expanded _headInfo(Experience experience, BuildContext context) {
+    bool isMobile = MediaQuery.of(context).size.width < 600;
     return Expanded(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Role
           SizedBox(
@@ -93,6 +102,12 @@ class ExperienceCard extends StatelessWidget {
               style: context.textTheme.labelSmall,
             ),
           ),
+
+          // Location
+          SizedBox(height: 4.0),
+          isMobile
+              ? LocationChip(location: experience.location)
+              : SizedBox.shrink(),
         ],
       ),
     );

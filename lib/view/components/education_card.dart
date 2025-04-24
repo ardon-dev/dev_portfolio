@@ -43,26 +43,33 @@ class EducationCard extends StatelessWidget {
     );
   }
 
-  Row _head(BuildContext context, Education education) => Row(
-    spacing: 16.0,
-    children: [
-      // Logo
-      ClipRRect(
-        borderRadius: BorderRadius.circular(36.0),
-        child: Image.asset(education.logo, width: 36, height: 36),
-      ),
+  Row _head(BuildContext context, Education education) {
+    bool isMobile = MediaQuery.of(context).size.width < 600;
+    return Row(
+      spacing: 16.0,
+      children: [
+        // Logo
+        ClipRRect(
+          borderRadius: BorderRadius.circular(36.0),
+          child: Image.asset(education.logo, width: 36, height: 36),
+        ),
 
-      // Institution
-      _headInfo(context),
+        // Institution
+        _headInfo(context),
 
-      // Location
-      LocationChip(location: education.location),
-    ],
-  );
+        // Location
+        !isMobile
+            ? LocationChip(location: education.location)
+            : SizedBox.shrink(),
+      ],
+    );
+  }
 
   Expanded _headInfo(BuildContext context) {
+    bool isMobile = MediaQuery.of(context).size.width < 600;
     return Expanded(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // Career
           SizedBox(
@@ -93,17 +100,11 @@ class EducationCard extends StatelessWidget {
             ),
           ),
 
-          // Status
-          // SizedBox(
-          //   width: double.infinity,
-          //   child: Text(
-          //     education.status,
-          //     style: context.textTheme.labelSmall?.copyWith(
-          //       color: context.colorScheme.primary,
-          //       fontWeight: FontWeight.bold,
-          //     ),
-          //   ),
-          // ),
+          // Location
+          SizedBox(height: 4.0),
+          isMobile
+              ? LocationChip(location: education.location)
+              : SizedBox.shrink(),
         ],
       ),
     );
