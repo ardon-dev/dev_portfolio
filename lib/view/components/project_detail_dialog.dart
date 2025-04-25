@@ -2,6 +2,7 @@ import 'package:dev_portfolio/data/model/project.dart';
 import 'package:dev_portfolio/main.dart';
 import 'package:dev_portfolio/view/components/fullscreen_dialog.dart';
 import 'package:dev_portfolio/view/components/link_button.dart';
+import 'package:dev_portfolio/view/components/scrollable_carousel.dart';
 import 'package:dev_portfolio/view/components/skill_tool.dart';
 import 'package:flutter/material.dart';
 
@@ -62,7 +63,8 @@ class ProjectDetailDialog extends StatelessWidget {
       height: 300,
       child: NotificationListener<UserScrollNotification>(
         onNotification: (notification) => true,
-        child: CarouselView(
+        child: ScrollableCarousel(
+          images: project.images,
           onTap: (index) {
             showDialog(
               useRootNavigator: false,
@@ -72,18 +74,6 @@ class ProjectDetailDialog extends StatelessWidget {
               },
             );
           },
-          itemExtent: 180,
-          children:
-              project.images
-                  .map(
-                    (e) => Image.asset(
-                      e,
-                      width: double.infinity,
-                      height: double.infinity,
-                      fit: BoxFit.cover,
-                    ),
-                  )
-                  .toList(),
         ),
       ),
     );
