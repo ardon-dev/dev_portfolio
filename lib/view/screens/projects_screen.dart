@@ -3,13 +3,26 @@ import 'package:dev_portfolio/viewmodel/projects_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class ProjectsScreen extends StatelessWidget {
+class ProjectsScreen extends StatefulWidget {
   const ProjectsScreen({super.key});
+
+  @override
+  State<ProjectsScreen> createState() => _ProjectsScreenState();
+}
+
+class _ProjectsScreenState extends State<ProjectsScreen> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final viewModel = context.read<ProjectsViewmodel>();
+      viewModel.fetchProjects();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     final viewModel = Provider.of<ProjectsViewmodel>(context);
-    viewModel.fetchProjects();
     var projectWidgets =
         viewModel.projects.map((e) => ProjectCard(project: e)).toList();
 

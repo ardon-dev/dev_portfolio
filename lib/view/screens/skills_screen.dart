@@ -3,13 +3,26 @@ import 'package:dev_portfolio/viewmodel/skills_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class SkillsScreen extends StatelessWidget {
+class SkillsScreen extends StatefulWidget {
   const SkillsScreen({super.key});
+
+  @override
+  State<SkillsScreen> createState() => _SkillsScreenState();
+}
+
+class _SkillsScreenState extends State<SkillsScreen> {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final viewModel = context.read<SkillsViewmodel>();
+      viewModel.fetchSkills();
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     final viewModel = Provider.of<SkillsViewmodel>(context);
-    viewModel.fetchSkills();
     var skillWidgets =
         viewModel.skills.map((skill) => SkillCard(skill: skill)).toList();
 

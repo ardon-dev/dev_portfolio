@@ -9,7 +9,10 @@ class SkillsViewmodel with ChangeNotifier {
   List<Skill> get skills => _skills;
 
   Future<void> fetchSkills() async {
-    _skills = await repository.loadSkills();
+    var skills = await repository.fetchSkillsFromWeb();
+    if (skills != null) {
+      _skills = skills;
+    }
     notifyListeners();
   }
 }

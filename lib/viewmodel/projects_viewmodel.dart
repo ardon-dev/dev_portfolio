@@ -9,7 +9,10 @@ class ProjectsViewmodel with ChangeNotifier {
   List<Project> get projects => _projects;
 
   Future<void> fetchProjects() async {
-    _projects = await repository.loadProjects();
+    var projects = await repository.fetchProjectsFromWeb();
+    if (projects != null) {
+      _projects = projects;
+    }
     notifyListeners();
   }
 }

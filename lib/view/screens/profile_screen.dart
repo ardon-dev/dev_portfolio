@@ -15,9 +15,17 @@ class ProfileScreen extends StatefulWidget {
 
 class _ProfileScreenState extends State<ProfileScreen> {
   @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      final viewModel = context.read<ProfileViewmodel>();
+      viewModel.fetchProfile();
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     final viewModel = Provider.of<ProfileViewmodel>(context);
-    viewModel.fetchProfile();
 
     return SizedBox(
       width: 800,

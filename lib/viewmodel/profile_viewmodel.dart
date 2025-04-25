@@ -16,8 +16,10 @@ class ProfileViewmodel with ChangeNotifier {
   Profile get profile => _profile;
 
   Future<void> fetchProfile() async {
-    var portfolio = await repository.loadPortfolio();
-    _profile = portfolio.profile;
+    var portfolio = await repository.fetchPortfolioFromWeb();
+    if (portfolio != null) {
+      _profile = portfolio.profile;
+    }
     notifyListeners();
   }
 }
