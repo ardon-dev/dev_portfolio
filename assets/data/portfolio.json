@@ -107,6 +107,18 @@
                 "tasks": [
                     "Parte del equipo de desarrollo de Banco Cuscatlán, colaborando en el desarrollo de algunas funcionalidades de aplicación Android."
                 ]
+            },
+            {
+                "place": "BSCI",
+                "role": "Flutter Developer",
+                "startDate": "may 2025",
+                "endDate": "actualidad",
+                "description": "",
+                "location": "San Salvador",
+                "logo": "assets/images/logos/bsci.webp",
+                "tasks": [
+                    "Parte del equipo de desarrollo de Optima Sociedad de Ahorro y Crédito, colaborando en el desarrollo de proyectos internos."
+                ]
             }
         ],
         "education": [
