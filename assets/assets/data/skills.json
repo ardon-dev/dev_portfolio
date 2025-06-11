@@ -57,7 +57,9 @@
             "Kotlin",
             "Swift",
             "MVVM",
-            "MVC"
+            "MVC",
+            "Provider",
+            "Http"
         ]
     },
     {
@@ -103,6 +105,19 @@
             "MySQL",
             "MVC",
             "Javascript"
+        ]
+    },
+    {
+        "name": "Node JS",
+        "description": "Desarrollo de API REST con Javascript.",
+        "experience": "-1 año",
+        "icon": "assets/images/logos/node.webp",
+        "tools": [
+            "Javascript",
+            "Express",
+            "MySQL",
+            "MSQL SERVER",
+            "Sockets"
         ]
     },
     {
