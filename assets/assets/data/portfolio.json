@@ -112,12 +112,25 @@
                 "place": "BSCI",
                 "role": "Flutter Developer",
                 "startDate": "may 2025",
-                "endDate": "actualidad",
+                "endDate": "jul 2025",
                 "description": "",
                 "location": "San Salvador",
                 "logo": "assets/images/logos/bsci.webp",
                 "tasks": [
                     "Parte del equipo de desarrollo de Optima Sociedad de Ahorro y Crédito, colaborando en el desarrollo de proyectos internos."
+                ]
+            },
+            {
+                "place": "Serfinsa",
+                "role": "Android Developer",
+                "startDate": "ago 2025",
+                "endDate": "actualidad",
+                "description": "",
+                "location": "San Salvador",
+                "logo": "assets/images/logos/serfinsa.webp",
+                "tasks": [
+                    "Análisis de requerimientos.",
+                    "Desarrollo de aplicaciones Android Nativas."
                 ]
             }
         ],
